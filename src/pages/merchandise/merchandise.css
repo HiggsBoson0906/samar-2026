@@ -1,0 +1,769 @@
+.cu-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: justify-evenly;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+    padding-top: 70px;
+    background-image: url('../../assets/customIllustration/cricketBackground.jpg');
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; 
+    font-family: "Barlow", sans-serif;
+}
+
+.disc{
+
+    font-size: 24px;
+    display: flex;
+    margin-top: 38px;
+    margin-left: 20px;
+    font-weight: 600;
+    color:#D4BEE4;
+}
+
+.merch-btn{
+    margin-top: 12px;
+    color: black;
+}
+
+.sizehead{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #D3EE98;
+}
+
+.samar-sizes{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.plus{
+    margin-right: 40px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.sign-right{
+    position: relative;
+    left: 21.5%;
+}
+
+.sign-left{
+    position: relative;
+    left: -21.5%;
+}
+
+.team-name{
+    position: absolute;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.gameconsole{
+    height: 80px;
+    width: 80px;;
+}
+
+.heading_merch{
+    font-size: 40px;
+    margin-top: 80px;
+    margin-bottom: 35px;
+    font-family: crossFly;
+    color: #D3EE98;
+    text-shadow: 2.85px 2.85px 0.532px black;
+}
+
+.cu_main {
+    color: white;
+    height: 75vh;
+    width: 90vw;
+    padding: 10px;
+    backdrop-filter: blur(30%px);
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.cu_container {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 50px;
+    width: 100%;
+    max-width: 1200px;   
+}
+
+.cu-maintext{
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: 2.85px 2.85px 0.532px black;
+    color: #D3EE98;
+    font-family: crossFly;
+}
+.cu-subtext{
+    font-size: 28px;
+    color: #D4BEE4;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    text-shadow: 2.85px 2.85px 0.532px black;
+}
+
+.cu-left-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.cu-merch-image {
+    width: 90px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    transition-duration: 0.5s;
+    border-radius: 10px;
+}
+
+.cu-merch-image:hover{
+    transform: scale(1.1,1.1);
+}
+
+.cu-main-image{
+    width: 650px;
+    height: 350px;
+    margin-right: 50px;
+    border-radius: 15px;
+}
+.cu-right-section {
+
+    max-width: 800px;;
+    
+}
+
+h1 {
+    font-size: 25px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.cu-price-section{
+    font-size: 15px;
+    color: white;
+    font-weight: 600;
+}
+
+.cu-price-list1{
+
+    margin-bottom: 5px;
+
+}
+
+.cu-special-text{
+    font-size: 18px;
+    font-weight: 600;
+    text-shadow: 2.85px 2.85px 0.532px black;
+}
+
+.lol{
+    color:#D3EE98;
+    font-family: "Barlow", sans-serif;
+}
+
+.merch-btn{
+    color: black;
+}
+
+.cu-disclaimer {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: white;
+    font-weight: 600;
+    font-family: "Barlow", sans-serif;
+}
+
+@media (max-width: 1300px){
+    .cu_main{
+        height: auto;
+        width: auto;
+    }
+    .cu-right-section{
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .cu_main{
+        height: auto;
+        width: auto;
+    }
+    .cu-left-section{
+        order: 2;
+    }
+    .cu-main-image{
+        order: 1;
+    }
+    .cu-right-section{
+        order: 3;
+    }
+
+    .cu-main-image{
+        height: auto;
+        width: auto;
+        margin-right: 0px;
+    }
+
+    .gameconsole{
+        display: none;
+
+    }
+    
+    .cu_container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+
+    .cu-main-image {
+        width: 70vw;
+    }
+
+    .heading {
+        font-size: 10vw;
+    }
+
+    .cu-left-section {
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    ul{
+        text-align: center;
+    }
+    .cu-right-section{
+        text-align: center;
+    }
+
+    button {
+        font-size: 16px;
+
+    }
+    .heading_merch {
+        font-size: 25px;
+        margin-top: 85px;
+        margin-bottom: 50px;
+        font-family: crossFly;
+        color: #D3EE98;
+        text-shadow: 2.85px 2.85px 0.532px black;
+        text-align: center;
+        }
+        .cu-merch-image {
+            justify-content: center;
+            text-align: center;
+            justify-items: center;
+        }
+        .plus {
+            margin-right: 0px;
+            margin-top: 30px;
+            text-align: center;
+            justify-items: center;
+            justify-content: center;
+        }
+    
+        .plus {
+            justify-content: space-evenly;
+            flex-direction: row; 
+             /* Ensure the elements stay in a row */  /* Even space between the elements */
+            justify-items: flex-start;
+        }
+    
+        .team-name {
+            font-size: 15px;  /* Slightly smaller content font size */
+        }
+    
+        .sign-left, .sign-right {
+            font-size: 15px;  /* Larger arrows for better visibility on mobile */
+        }
+        .cu-maintext {
+            text-align: center;
+            justify-content: center;
+            font-size: 20px;
+            margin-right: 35px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .cu-subtext {
+            text-align: center;
+            justify-items: center;
+            font-size: 30px;
+            margin-right: 25px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .cu-special-offer {
+            justify-content: center;
+        }
+        .cu-special-text {
+            text-align: center;
+            font-size: 17.5px;
+            justify-items: center;
+            margin-right: 35px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        .samar-sizes {
+            justify-items: center;
+            font-size: larger;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-right: 40px;
+        }
+        .cu-right-section .plus {
+            font-size: 17.5px;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            margin-left: 70px;
+
+        }
+        .merch-btn {
+            justify-items: center;
+            font-size: 20px;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            margin-right: 40px;
+
+        }
+        .cu-disclaimer {
+            font-size: 17.5px;
+            justify-items: center;
+            margin-top: 20px;
+            margin-bottom: 5px;
+            margin-right: 40px;
+        }
+        .disc {
+            justify-content: center;
+            justify-items: center;
+            text-align: center;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .sizehead {
+            justify-content: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 20px;
+            padding: 10px;
+            padding-bottom: 5px;
+        }
+        .cu-right-section .plus .lola {
+            margin-right: 40px;
+        }
+}
+
+@media (max-width: 515px) {
+    .cu_container {
+        display: flex;
+        justify-content: space-between;
+        border-radius: 10px;
+        padding: 50px;
+        width: 100%;
+        max-width: 380px;
+        
+    }
+    .cu-main-image {
+        width: 500px; /* Slightly smaller image for narrow screens */
+        justify-content: center;
+        justify-items: center;
+    }
+    .mid-section .plus {
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .cu-left-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; /* Align items with even spacing */
+        padding: 5px; /* Reduce padding for narrow screens */
+    }
+
+    button {
+        width: auto;
+        padding: 8px; /* Reduce button padding */
+        font-size: 14px; /* Ensure buttons are legible but not oversized */
+    }
+
+    .heading_merch {
+        font-size: 22px; /* Adjust heading size for smaller screens */
+        margin-top: 70px;
+        margin-bottom: 40px;
+    }
+
+    .mid-section .plus {
+        flex-direction: row; /* Keep elements in a row */
+        justify-content: space-around; /* Equal spacing between elements */
+        margin-top: 15px;
+        justify-items: center;
+        margin-right: 30px;
+        margin-left: 40px;
+        margin-top: 20px;
+    }
+
+    .team-name {
+        font-size: 17px !important; /* Adjust font size for narrow screens */
+    }
+
+    .sign-left,
+    .sign-right {
+        font-size: 15px !important; /* Slightly smaller arrows for better alignment */
+    }
+    
+    .cu-maintext {
+        font-size: 15px; /* Reduce font size */
+        align-items: center;
+        text-align: center;
+        margin: 20px 20px; /* Adjust margins */
+        padding-top: 5px;
+    }
+
+    .cu-subtext {
+        font-size: 20px; /* Reduce font size */
+        text-align: center;
+        margin: 20px 20px;
+    }
+
+    .cu-special-offer {
+        justify-content: center;
+        margin: 10px;
+    }
+
+    .cu-special-text {
+        font-size: 15px; /* Smaller special text for readability */
+        margin: 10px 10px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .samar-sizes {
+        font-size: 14px; /* Reduce size for smaller screens */
+        margin-top: 10px;
+        margin: 5px;
+        text-align: center;
+    }
+
+    .cu-right-section .plus {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        font-size: 15px !important;
+        margin-left: 50px;
+        margin-top: 10px;
+    }
+
+    .merch-btn {
+        font-size: 15px; /* Adjust button size */
+        padding: 10px 15px;
+        text-align: center;
+        margin-left: 30px;
+        margin-bottom: 10px;
+    }
+
+    .cu-disclaimer {
+        font-size: 15px; /* Reduce font size */
+        margin-top: 15px;
+        text-align: center;
+    }
+    .disc {
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .sizehead {
+        justify-content: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 20px;
+        padding: 10px;
+        padding-bottom: 5px;
+    }
+    .cu-right-section .plus .lola {
+        margin-right: 40px;
+    }
+    
+}
+
+@media (max-width: 440px) {
+    .cu_container {
+        display: flex;
+        justify-content: space-between;
+        border-radius: 10px;
+        padding: 50px;
+        width: 100%;
+        max-width: 380px;
+        
+    }
+    .cu-main-image {
+        width: 500px; /* Slightly smaller image for narrow screens */
+        justify-content: center;
+        justify-items: center;
+    }
+    .mid-section .plus {
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .cu-left-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; /* Align items with even spacing */
+        padding: 5px; /* Reduce padding for narrow screens */
+    }
+
+    button {
+        width: auto;
+        padding: 8px; /* Reduce button padding */
+        font-size: 14px; /* Ensure buttons are legible but not oversized */
+    }
+
+    .heading_merch {
+        font-size: 22px; /* Adjust heading size for smaller screens */
+        margin-top: 70px;
+        margin-bottom: 40px;
+    }
+
+    .mid-section .plus {
+        flex-direction: row; /* Keep elements in a row */
+        justify-content: space-around; /* Equal spacing between elements */
+        margin-top: 15px;
+        justify-items: center;
+        margin-right: 30px;
+        margin-left: 40px;
+        margin-top: 20px;
+    }
+
+    .team-name {
+        font-size: 17px !important; /* Adjust font size for narrow screens */
+    }
+
+    .sign-left,
+    .sign-right {
+        font-size: 15px !important; /* Slightly smaller arrows for better alignment */
+    }
+    
+    .cu-maintext {
+        font-size: 15px; /* Reduce font size */
+        align-items: center;
+        text-align: center;
+        margin: 20px 20px; /* Adjust margins */
+        padding-top: 5px;
+    }
+
+    .cu-subtext {
+        font-size: 20px; /* Reduce font size */
+        text-align: center;
+        margin: 20px 20px;
+    }
+
+    .cu-special-offer {
+        justify-content: center;
+        margin: 10px;
+    }
+
+    .cu-special-text {
+        font-size: 15px; /* Smaller special text for readability */
+        margin: 10px 10px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .samar-sizes {
+        font-size: 14px; /* Reduce size for smaller screens */
+        margin-top: 10px;
+        margin: 5px;
+        text-align: center;
+    }
+
+    .cu-right-section .plus {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        font-size: 15px !important;
+        margin-left: 50px;
+        margin-top: 10px;
+    }
+
+    .merch-btn {
+        font-size: 15px; /* Adjust button size */
+        padding: 10px 15px;
+        text-align: center;
+        margin-left: 30px;
+        margin-bottom: 10px;
+    }
+
+    .cu-disclaimer {
+        font-size: 15px; /* Reduce font size */
+        margin-top: 15px;
+        text-align: center;
+    }
+    .disc {
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .sizehead {
+        justify-content: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 20px;
+        padding: 10px;
+        padding-bottom: 5px;
+    }
+    .cu-right-section .plus .lola {
+        margin-right: 40px;
+    }
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 90%;
+    max-height: 90%;
+    overflow: hidden;
+}
+
+.size-chart-image {
+    width: 100%;
+    height: auto;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+    background: none;
+    border: none;
+}
+/* === NEW HOLOGRAPHIC UI ELEMENTS === */
+
+/* The container for the stage and arrows */
+.stage-ui-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* Add a dark vignette effect to the whole center section */
+    background: radial-gradient(circle at center, transparent 0%, rgba(0,0,0,0.7) 80%);
+}
+
+/* Holographic Nav Arrows */
+.holo-arrow {
+    background: rgba(0, 0, 0, 0.3);
+    border: 2px solid #D3EE98;
+    color: #D3EE98;
+    padding: 20px 15px;
+    font-size: 24px;
+    clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0% 80%); /* Futuristic shape */
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 15px rgba(211, 238, 152, 0.4);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    z-index: 30;
+}
+
+.holo-arrow:hover {
+    background: rgba(211, 238, 152, 0.2);
+    box-shadow: 0 0 25px rgba(211, 238, 152, 0.8);
+    transform: scale(1.1);
+    color: white;
+}
+
+.arrow-left { margin-right: -20px; } /* Overlap slightly with stage */
+.arrow-right { margin-left: -20px; clip-path: polygon(0% 0%, 100% 20%, 100% 80%, 0% 100%); }
+
+
+/* The new "Pill" shaped Size Button */
+.holo-size-btn {
+    margin-top: -40px; /* Pull it up to overlap the pedestal slightly */
+    position: relative;
+    z-index: 40;
+    background: linear-gradient(90deg, rgba(0,0,0,0.7), rgba(20,20,40,0.8));
+    border: 3px solid #D3EE98;
+    color: #D3EE98;
+    font-family: 'speedPixel', sans-serif; /* Using your font */
+    font-size: 1.1rem;
+    padding: 12px 40px;
+    border-radius: 50px; /* Pill shape */
+    box-shadow: 0 0 20px rgba(211, 238, 152, 0.5), inset 0 0 10px rgba(211, 238, 152, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+/* Adding a subtle light sweep animation */
+.holo-size-btn::before {
+    content: '';
+    position: absolute;
+    top: 0; left: -100%;
+    width: 100%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+    transition: 0.5s;
+    transform: skewX(-20deg);
+}
+
+.holo-size-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px rgba(211, 238, 152, 0.8);
+    color: white;
+    text-shadow: 0 0 5px #ffffff;
+}
+
+.holo-size-btn:hover::before {
+    left: 100%;
+}
+
+/* Hide the old elements we don't need anymore */
+.heading_merch, .disc, .samar-sizes .merch-btn {
+   /* display: none;  <-- Optional: Uncomment this if you want to hide old text */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .holo-arrow { padding: 15px 10px; font-size: 18px; }
+    .holo-size-btn { font-size: 0.9rem; padding: 10px 30px; margin-top: -20px; }
+}
