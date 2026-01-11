@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'VerminVibes';
+    src: local("VerminVibes"), 
+         url("src/assets/fonts/vermin.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Novega';
+    src: local("Novega"), 
+         url("src/assets/fonts/novega.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'KnightWarrior';
+    src: local("KnightWarrior"), 
+         url("src/assets/fonts/knightWarrior.otf") format("opentype");
+}
+@font-face {
+    font-family: "Quantico-Bold";
+    src: local("Quantico-Bold"), 
+         url("src/assets/fonts/Quantico-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'FastLines';
+    src: local("FastLines"), 
+         url("src/assets/fonts/fastLines.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'CrossFly';
+    src: local("CrossFly"), 
+         url("src/assets/fonts/crossFly.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'speedPixel';
+    src: local("speedPixel"), 
+         url("src/assets/fonts/speedPixel.ttf") format("truetype");
+}
+
+
+
+@font-face {
+    font-family: 'speedPixelItalic';
+    src: local("speedPixelItalic"), 
+         url("src/assets/fonts/speedPixelItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Brave81';
+    src: local("Brave81"), 
+         url("src/assets/fonts/Brave81.ttf") format("truetype");
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+    overflow-x: hidden;
+    margin: 0;
+    width: 100%;
+}
