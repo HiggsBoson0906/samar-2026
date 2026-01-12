@@ -57,6 +57,7 @@ function About() {
   return (
     <section
       ref={aboutRef}
+      id="about-section"
       className="w-full py-16 sm:py-24 px-4 sm:px-8"
     >
       <motion.div
