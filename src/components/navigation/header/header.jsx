@@ -126,7 +126,7 @@ function Header() {
                     TEAM
                 </NavLink>
 
-                {/* <NavLink
+                <NavLink
                     to="/contact"
                     className={({ isActive }) =>
                         `px-8 py-3 hover:text-rose-400 font-crossFly text-xs tracking-widest ${
@@ -136,7 +136,7 @@ function Header() {
 
                 >
                     CONTACT US
-                </NavLink> */}
+                </NavLink>
             </div>
 
 <a
