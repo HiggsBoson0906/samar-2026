@@ -1,0 +1,152 @@
+
+
+video{
+      position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        transform: translate(-50%, -50%) scale(1.18) ;
+        z-index: -1;
+}
+
+.intro-button-container {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	z-index: 20000;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	animation: none;
+}
+
+ /* .intro-button-container .intro-button {
+  user-select: none;
+  cursor: pointer;
+  font-family: "joystix monospace";
+  color: black;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+  letter-spacing: 3px;
+  height: 60px;
+  width: 50vw;
+  background-color: rgb(184, 184, 184);
+  border: 5px solid black;
+  box-shadow: inset -3px -3px 0 4px rgb(118, 118, 118);
+  transition: all 0.05s ease-in-out;
+} */
+
+.intro-button-container .intro-button:active,
+.intro-button-container .intro-button:focus {
+  box-shadow: none;
+}
+
+.intro-button-container .intro-button:hover {
+  border-color: rgb(255, 255, 255);
+}
+
+.pixel-corners {
+  clip-path: polygon(
+    0px calc(100% - 5px),
+    5px calc(100% - 5px),
+    5px 100%,
+    calc(100% - 5px) 100%,
+    calc(100% - 5px) calc(100% - 5px),
+    100% calc(100% - 5px),
+    100% 5px,
+    calc(100% - 5px) 5px,
+    calc(100% - 5px) 0px,
+    5px 0px,
+    5px 5px,
+    0px 5px
+  );
+} 
+.intro-button {
+	font-family: var(--font-family1);
+	position: relative;
+	cursor: pointer;
+	display: inline-block;
+	text-transform: uppercase;
+	max-width: 500px;
+  margin-top: -40px;
+  width: 100vw;
+
+}
+
+.intro-button:hover .border {
+	box-shadow: 0px 0px 10px 0px rgb(159, 22, 239);
+}
+
+.intro-button:hover .border .left-plane,
+.intro-button:hover .border .right-plane {
+	transform: translateX(0%);
+}
+
+.intro-button:hover .text {
+	color: #121212;
+}
+
+.intro-button .border {
+	border: 1px solid white;
+	height: 32px;
+	border-radius: 6px;
+	overflow: hidden;
+	position: relative;
+	transition: 0.1s ease-out;
+    
+}
+
+.intro-button .border .left-plane,
+.intro-button .border .right-plane {
+	position: absolute;
+	background: white;
+	height: 32px;
+	width: 350px;
+	transition: 0.15s ease-out;
+}
+
+.intro-button .border .left-plane {
+	left: 0;
+	transform: translateX(-100%);
+}
+
+.intro-button .border .right-plane {
+	right: 0;
+	transform: translateX(100%);
+}
+
+.intro-button .text {
+	position: absolute;
+	left: 0;
+	right: 0;
+	text-align: center;
+	top: 50%;
+	transform: translateY(-50%);
+	transition: 0.15s ease-out;
+	color: rgb(246, 246, 246);
+	font-weight: 900;
+    font-family: Brave81;
+    font-size: 25px;
+    letter-spacing: 7px;
+    border-radius: 6px;
+    backdrop-filter: blur(10px);
+    border: 1px solid white;
+
+
+}
+
+.maincont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}

@@ -3,7 +3,7 @@ import { RazorpayButton, RazorpayButton3, RazorpayButton4 } from './payment.jsx'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRulerCombined } from '@fortawesome/free-solid-svg-icons';
 
-import HoverAudio from '../../assets/audio/buttonHoverGTA.mp3';
+// import HoverAudio from '../../assets/audio/buttonHoverGTA.mp3';
 import MerchStage from './MerchStage';
 
 // Images
@@ -19,13 +19,13 @@ import '../../../globalStyles.css';
 function Merchandise() {
     const [count, setCount] = useState(1);
     const [isModalOpen, setIsModalOpen] = useState(false);
-    const hoverAudioRef = useRef(new Audio(HoverAudio));
+    // const hoverAudioRef = useRef(new Audio(HoverAudio));
     
     const playHover = () => {
-        if (hoverAudioRef.current) {
-            hoverAudioRef.current.currentTime = 0;
-            hoverAudioRef.current.play().catch(e => console.log(e));
-        }
+        // if (hoverAudioRef.current) {
+        //     hoverAudioRef.current.currentTime = 0;
+        //     hoverAudioRef.current.play().catch(e => console.log(e));
+        // }
     };
 
     const increment = () => {

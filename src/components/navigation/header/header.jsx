@@ -1,13 +1,64 @@
 import { useState, useRef } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import '../../../../globalStyles.css';
 import samarLogo from '/favicon.png';
 import { NavLink } from 'react-router-dom';
 
 function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const navigate = useNavigate();
+    const location = useLocation();
 
     const toggleMenu = () => {
         setIsMenuOpen((prev) => !prev);
+    };
+
+    const smoothScrollTo = (element, duration = 500) => {
+        const targetPosition = element.getBoundingClientRect().top + window.scrollY;
+        const startPosition = window.scrollY;
+        const distance = targetPosition - startPosition;
+        let start = null;
+
+        const animation = (currentTime) => {
+            if (start === null) start = currentTime;
+            const elapsed = currentTime - start;
+            const progress = Math.min(elapsed / duration, 1);
+            
+            // Easing function for smooth acceleration/deceleration
+            const ease = progress < 0.5 
+                ? 2 * progress * progress 
+                : -1 + (4 - 2 * progress) * progress;
+            
+            window.scrollTo(0, startPosition + distance * ease);
+
+            if (elapsed < duration) {
+                requestAnimationFrame(animation);
+            }
+        };
+
+        requestAnimationFrame(animation);
+    };
+
+    const handleAboutScroll = () => {
+        setIsMenuOpen(false); // Close mobile menu if open
+        
+        if (location.pathname !== '/') {
+            // If not on home page, navigate first then scroll
+            navigate('/');
+            // Use setTimeout to allow navigation to complete
+            setTimeout(() => {
+                const aboutSection = document.getElementById('about-section');
+                if (aboutSection) {
+                    smoothScrollTo(aboutSection, 500);
+                }
+            }, 100);
+        } else {
+            // Already on home page, just scroll
+            const aboutSection = document.getElementById('about-section');
+            if (aboutSection) {
+                smoothScrollTo(aboutSection, 500);
+            }
+        }
     };
 
     return (
@@ -46,16 +97,12 @@ function Header() {
                     HOME
                 </NavLink>
 
-                <NavLink
-                    to="/about"
-                    className={({ isActive }) =>
-                        `px-8 py-3 hover:text-rose-400 font-crossFly text-xs tracking-widest ${
-                            isActive ? 'text-[#8CCCFF]' : 'text-white'
-                        }`
-                    }
+                <button
+                    onClick={handleAboutScroll}
+                    className="px-8 py-3 hover:text-rose-400 font-crossFly text-xs tracking-widest text-white cursor-pointer"
                 >
                     ABOUT
-                </NavLink>
+                </button>
 
                 <NavLink
                     to="/merchandise"
@@ -79,7 +126,7 @@ function Header() {
                     TEAM
                 </NavLink>
 
-                <NavLink
+                {/* <NavLink
                     to="/contact"
                     className={({ isActive }) =>
                         `px-8 py-3 hover:text-rose-400 font-crossFly text-xs tracking-widest ${
@@ -89,7 +136,7 @@ function Header() {
 
                 >
                     CONTACT US
-                </NavLink>
+                </NavLink> */}
             </div>
 
 <a
