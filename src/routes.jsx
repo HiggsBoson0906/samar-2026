@@ -13,6 +13,7 @@ import Merchandise from "./pages/merchandise/merchandise";
 import Spaceship from "./components/spaceship.jsx"; 
 // import Team from "./pages/team/team.jsx"
 import Contact from "./pages/contact/contact";
+import MuteButton from "./pages/home/homeComponents/sound.jsx";
 // import Register from "./pages/register/register";
 // import Registration2 from "./pages/register/Registration2.jsx"
 // import SUC from "./pages/underConstruction.jsx";
@@ -114,7 +115,7 @@ const isCursorEnabled = showHomepage === 3;
 
   return (
     <div>
-      {isCursorEnabled&& <Spaceship />}
+      {showHomepage===3 && <Spaceship />}
         <>
           {showHomepage === 1 ? (
             <Intro handleClick={handleDivClick} />
@@ -134,7 +135,7 @@ const isCursorEnabled = showHomepage === 3;
               </video>
 
               <button
-                className="mt-8 border-2 text-xl italic border-rose-500 text-white font-crossFly rounded-tl-3xl rounded-br-3xl hover:bg-rose-500 hover:rounded-lg hover:scale-[.97] transition-all ease-in-out backdrop-blur-lg duration-75 bottom-[60px] md:bottom-[20px]"
+                className="mt-8 border-2 text-xl italic border-cyan-500 text-white font-crossFly rounded-tl-3xl rounded-br-3xl hover:bg-cyan-500 hover:rounded-lg hover:scale-[.97] transition-all ease-in-out backdrop-blur-lg duration-75 bottom-[60px] md:bottom-[20px]"
                 onClick={handleSkip}
                 style={{ position: "absolute", right: "20px", padding: "10px 20px", fontSize: "16px", zIndex: 1000 }}
               >
@@ -143,7 +144,8 @@ const isCursorEnabled = showHomepage === 3;
             </div>
           ) : (
             <>
-              {showHomepage === 3 && <Header />}
+                {showHomepage === 3 && <Header />}
+                {showHomepage === 3 && <MuteButton />}
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/merchandise" element={<Merchandise />} />

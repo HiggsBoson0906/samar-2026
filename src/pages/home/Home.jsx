@@ -4,16 +4,19 @@ import ImageGallery from './homeComponents/imageGallery.jsx';
 import Sponsors from './homeComponents/sponsors.jsx';
 import Timeline from './homeComponents/timeline.jsx';
 import About from './homeComponents/abouthome.jsx';
+import MuteButton from './homeComponents/sound.jsx';   
 
 function Home() {
     return (
         <>
+           
             <HomeBackground />
             <LandingSection />
             <ImageGallery />
             <About/>
             <Timeline/>
-            <Sponsors/>
+            <Sponsors />
+           
         </>
     );
 }
