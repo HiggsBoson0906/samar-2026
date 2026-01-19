@@ -105,14 +105,14 @@ function Merchandise() {
                         </button>
 
                         {/* Position Name */}
-                        <h2 className="text-xl md:text-3xl font-bold font-vermin tracking-widest mt-4 text-[#D3EE98] text-center drop-shadow-[0_0_10px_rgba(211,238,152,0.8)]">
+                        <h2 className="text-xl md:text-3xl font-bold font-audiowide tracking-widest mt-4 text-[#D3EE98] text-center drop-shadow-[0_0_10px_rgba(211,238,152,0.8)]">
                             {count === 1 ? "OVERALL COORDINATOR" : count === 2 ? "HEAD COORDINATOR" : count === 3 ? "CORE COORDINATOR" : "EXECUTIVES"}
                         </h2>
 
                         {/* Price */}
                         <div className="total text-lg font-bold mt-2 text-center">
-                            <span className="font-speedPixel text-white mr-2">Total Amount: </span>
-                            <span className="text-[#D3EE98] font-speedPixel italic text-xl">499/-</span>
+                            <span className="font-montserrat text-white mr-2">Total Amount: </span>
+                            <span className="text-[#D3EE98] font-montserrat italic text-xl">499/-</span>
                         </div>
 
                         {/* PAYMENT BUTTON - Ensure visibility */}

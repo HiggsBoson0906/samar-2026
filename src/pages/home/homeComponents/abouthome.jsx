@@ -69,7 +69,7 @@ function About() {
         {/* HEADING */}
         <motion.h1
           variants={fadeInUp}
-          className="font-crossFly text-3xl sm:text-4xl lg:text-5xl text-white"
+          className="font-audiowide text-3xl sm:text-4xl lg:text-5xl text-white"
         >
           About{" "}
           <span className="italic text-[#8CCCFF] glow-text">Us</span>
@@ -109,11 +109,11 @@ function About() {
               {/* Glow border */}
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-[#8CCCFF]/10 to-rose-500/10 opacity-0 hover:opacity-100 transition-opacity"></div>
 
-              <h2 className="relative z-10 text-xl sm:text-2xl font-crossFly uppercase italic text-[#8CCCFF] mb-3">
+              <h2 className="relative z-10 text-xl sm:text-2xl font-audiowide uppercase italic text-[#8CCCFF] mb-3">
                 {box.title}
               </h2>
 
-              <p className="relative z-10 text-gray-300 text-sm sm:text-base leading-relaxed tracking-wide">
+              <p className="relative z-10 text-gray-300 text-sm sm:text-base leading-relaxed tracking-wide font-montserrat">
                 {box.description}
               </p>
             </motion.div>

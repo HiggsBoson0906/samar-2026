@@ -42,7 +42,7 @@ const Timeline = () => {
 
         {/* HEADING */}
         <div className="text-center mb-14">
-          <h1 className="font-crossFly text-3xl sm:text-4xl lg:text-5xl text-white">
+          <h1 className="font-audiowide text-3xl sm:text-4xl lg:text-5xl text-white">
             Our{" "}
             <span className="italic text-[#8CCCFF] glow-text">Journey</span>
           </h1>
@@ -93,15 +93,15 @@ const Timeline = () => {
                 "
               >
                 {/* YEAR */}
-                <span className="text-[#8CCCFF] font-crossFly text-sm tracking-widest">
+                <span className="text-[#8CCCFF] font-audiowide text-sm tracking-widest">
                   {item.year}
                 </span>
 
-                <h2 className="mt-2 font-knightWarrior text-xl sm:text-2xl text-white">
+                <h2 className="mt-2 font-audiowide text-xl sm:text-2xl text-white">
                   {item.title}
                 </h2>
 
-                <p className="mt-4 text-gray-300 text-sm sm:text-base leading-relaxed tracking-wide font-serif glow-text">
+                <p className="mt-4 text-gray-300 text-sm sm:text-base leading-relaxed tracking-wide font-montserrat glow-text">
                   {item.description}
                 </p>
 

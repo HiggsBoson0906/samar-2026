@@ -54,7 +54,7 @@ function ImageSection() {
 
         {/* TITLE */}
         <div className="text-center mb-10">
-          <h1 className="font-crossFly text-3xl sm:text-4xl lg:text-5xl text-white">
+          <h1 className="font-audiowide text-3xl sm:text-4xl lg:text-5xl text-white">
             Image{" "}
             <span className="italic text-[#8CCCFF] glow-text">Gallery</span>
           </h1>

@@ -10,7 +10,7 @@ export default function Team() {
   const renderedSections = useMemo(() => {
     return Object.entries(teamData).map(([teamName, members]) => (
       <div key={teamName} className="space-y-8">
-        <h3 className="text-center text-3xl md:text-5xl text-cyan-300 tracking-wider font-bold">
+        <h3 className="text-center text-3xl md:text-5xl text-cyan-300 tracking-wider font-bold font-audiowide">
           {teamName}
         </h3>
 
@@ -61,7 +61,7 @@ export default function Team() {
   return (
     <section
       ref={sectionRef}
-      className="relative min-h-screen px-4 py-12 overflow-hidden"
+      className="relative min-h-screen px-4 py-12 overflow-hidden mt-10"
     >
       {/* 🚀 GPU-SAFE background video */}
       <video

@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import "../homeStyles.css";
 
 import SamarLogo from "../../../assets/logo/samarLogoWhite.png";
-import SamarText from "../../../assets/customIllustration/samartext.png";
+import SamarText from "../../../assets/customIllustration/samartext3.png";
 import Astronaut from "../../../assets/illustration/astronaut.png";
 
 function LandingSection() {
@@ -48,7 +48,7 @@ function LandingSection() {
               loading="lazy"
               className="w-[70px] sm:w-[90px] lg:w-[110px] cosmic-glow"
             />
-            <h1 className="font-knightWarrior text-4xl sm:text-6xl lg:text-7xl glow-text drop-shadow-[3px_3px_0px_#000]">
+            <h1 className="font-audiowide text-4xl sm:text-6xl lg:text-7xl glow-text drop-shadow-[3px_3px_0px_#000]">
               2026
             </h1>
           </div>
@@ -69,7 +69,7 @@ function LandingSection() {
             className="
               max-w-[90%] sm:max-w-[600px]
               mt-6 sm:mt-8
-              font-fastLines
+              font-montserrat
               text-lg sm:text-2xl lg:text-3xl
               tracking-widest
               drop-shadow-[2px_2px_0px_#000]
@@ -94,7 +94,7 @@ function LandingSection() {
               className="
                 border-2 px-10 sm:px-16 py-3 sm:py-4
                 text-lg sm:text-xl italic
-                border-[#8CCCFF] text-white font-crossFly
+                border-[#8CCCFF] text-white font-audiowide
                 rounded-tl-3xl rounded-br-3xl
                 hover:bg-rose-500 hover:rounded-lg hover:scale-[.97]
                 transition-all backdrop-blur-lg
@@ -110,7 +110,7 @@ function LandingSection() {
               className="
                 border-2 px-8 sm:px-12 py-3 sm:py-4
                 text-lg sm:text-xl italic
-                border-white text-white font-crossFly
+                border-white text-white font-audiowide
                 rounded-tr-3xl rounded-bl-3xl
                 hover:bg-white hover:text-black hover:rounded-lg hover:scale-[.97]
                 transition-all backdrop-blur-lg

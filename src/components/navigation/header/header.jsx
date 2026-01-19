@@ -89,7 +89,7 @@ function Header() {
                 <NavLink
                     to="/"
                     className={({ isActive }) =>
-                        `px-8 py-3 hover:text-rose-400 font-crossFly text-xs tracking-widest ${
+                        `px-8 py-3 hover:text-rose-400 font-audiowide text-sm tracking-widest ${
                             isActive ? 'text-[#8CCCFF]' : 'text-white'
                         }`
                     }
@@ -99,7 +99,7 @@ function Header() {
 
                 <button
                     onClick={handleAboutScroll}
-                    className="px-8 py-3 hover:text-rose-400 font-crossFly text-xs tracking-widest text-white cursor-pointer"
+                    className="px-8 py-3 hover:text-rose-400 font-audiowide text-sm tracking-widest text-white cursor-pointer"
                 >
                     ABOUT
                 </button>
@@ -107,7 +107,7 @@ function Header() {
                 <NavLink
                     to="/merchandise"
                     className={({ isActive }) =>
-                        `px-8 py-3 hover:text-rose-400 font-crossFly text-xs tracking-widest ${
+                        `px-8 py-3 hover:text-rose-400 font-audiowide text-sm tracking-widest ${
                             isActive ? 'text-[#8CCCFF]' : 'text-white'
                         }`
                     }
@@ -117,7 +117,7 @@ function Header() {
                 <NavLink
                     to="/team"
                     className={({ isActive }) =>
-                        `px-8 py-3 hover:text-rose-400 font-crossFly text-xs tracking-widest ${
+                        `px-8 py-3 hover:text-rose-400 font-audiowide text-sm tracking-widest ${
                             isActive ? 'text-[#8CCCFF]' : 'text-white'
                         }`
                     }
@@ -129,7 +129,7 @@ function Header() {
                 <NavLink
                     to="/contact"
                     className={({ isActive }) =>
-                        `px-8 py-3 hover:text-rose-400 font-crossFly text-xs tracking-widest ${
+                        `px-8 py-3 hover:text-rose-400 font-audiowide text-sm tracking-widest ${
                             isActive ? 'text-[#8CCCFF]' : 'text-white'
                         }`
                     }
@@ -144,7 +144,7 @@ function Header() {
   download
   className="hidden md:block border-2 px-8 py-3 
              border-[#8CCCFF] text-[#8CCCFF] 
-             italic font-crossFly 
+             italic font-audiowide 
              rounded-tl-3xl rounded-br-3xl
              backdrop-blur-lg
              hover:bg-[#8CCCFF] hover:text-black

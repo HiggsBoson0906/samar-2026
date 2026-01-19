@@ -20,7 +20,7 @@ function Sponsors() {
 
         {/* TITLE */}
         <div className="text-center mb-10 sm:mb-14">
-          <h1 className="font-crossFly text-3xl sm:text-4xl lg:text-5xl text-white">
+          <h1 className="font-audiowide text-3xl sm:text-4xl lg:text-5xl text-white">
             Our{" "}
             <span className="italic text-[#8CCCFF] glow-text">
               Past Sponsors

@@ -6,6 +6,8 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
+				audiowide: ['Audiowide', 'sans-serif'],
+				montserrat: ['Montserrat', 'sans-serif'],
 				vermin: ['VerminVibes'],
 				novega: ['Novega'],
 				knightWarrior: ['KnightWarrior'],
