@@ -56,9 +56,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
+/* Global font family for body text */
+@layer base {
+    body {
+        @apply font-montserrat;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        @apply font-audiowide;
+    }
+}
 
 #root {
     padding: 0px;

@@ -32,10 +32,10 @@ function Contact() {
                 <div className="mt-[80px] px-6 md:px-12 lg:px-24 py-12">
                     {/* Header */}
                     <div className="text-center mb-12">
-                        <h1 className="font-knightWarrior text-5xl sm:text-6xl lg:text-7xl glow-text drop-shadow-[3px_3px_0px_#000] mb-4">
+                        <h1 className="font-audiowide text-5xl sm:text-6xl lg:text-7xl glow-text drop-shadow-[3px_3px_0px_#000] mb-4">
                             CONTACT US
                         </h1>
-                        <p className="font-fastLines text-lg sm:text-xl lg:text-2xl tracking-widest drop-shadow-[2px_2px_0px_#000] max-w-2xl mx-auto">
+                        <p className="font-montserrat text-lg sm:text-xl lg:text-2xl tracking-widest drop-shadow-[2px_2px_0px_#000] max-w-2xl mx-auto">
                             Ready to join the ultimate sports extravaganza? Reach out to us!
                         </p>
                     </div>
@@ -45,7 +45,7 @@ function Contact() {
                         {/* Contact Information */}
                         <div className="space-y-8">
                             <div>
-                                <h2 className="font-crossFly text-2xl sm:text-3xl mb-6 text-[#8CCCFF] cosmic-text-glow">
+                                <h2 className="font-audiowide text-2xl sm:text-3xl mb-6 text-[#8CCCFF] cosmic-text-glow">
                                     GET IN TOUCH
                                 </h2>
                                 <div className="space-y-6">
@@ -56,7 +56,7 @@ function Contact() {
                                             </svg>
                                         </div>
                                         <div>
-                                            <h3 className="font-fastLines text-lg">Email</h3>
+                                            <h3 className="font-montserrat text-lg">Email</h3>
                                             <p className="text-gray-300">samar@nitrr.ac.in</p>
                                         </div>
                                     </div>
@@ -68,7 +68,7 @@ function Contact() {
                                             </svg>
                                         </div>
                                         <div>
-                                            <h3 className="font-fastLines text-lg">Phone</h3>
+                                            <h3 className="font-montserrat text-lg">Phone</h3>
                                             <p className="text-gray-300">+91 98765 43210</p>
                                         </div>
                                     </div>
@@ -81,7 +81,7 @@ function Contact() {
                                             </svg>
                                         </div>
                                         <div>
-                                            <h3 className="font-fastLines text-lg">Location</h3>
+                                            <h3 className="font-montserrat text-lg">Location</h3>
                                             <p className="text-gray-300">NIT Raipur, Chhattisgarh, India</p>
                                         </div>
                                     </div>
@@ -90,7 +90,7 @@ function Contact() {
 
                             {/* Social Media */}
                             <div>
-                                <h2 className="font-crossFly text-2xl sm:text-3xl mb-6 text-[#8CCCFF] cosmic-text-glow">
+                                <h2 className="font-audiowide text-2xl sm:text-3xl mb-6 text-[#8CCCFF] cosmic-text-glow">
                                     FOLLOW US
                                 </h2>
                                 <div className="flex space-x-4">
@@ -115,12 +115,12 @@ function Contact() {
 
                         {/* Contact Form */}
                         <div className="bg-black bg-opacity-50 backdrop-blur-lg rounded-3xl p-8 border border-[#8CCCFF] border-opacity-30">
-                            <h2 className="font-crossFly text-2xl sm:text-3xl mb-6 text-[#8CCCFF] cosmic-text-glow">
+                            <h2 className="font-audiowide text-2xl sm:text-3xl mb-6 text-[#8CCCFF] cosmic-text-glow">
                                 SEND US A MESSAGE
                             </h2>
                             <form onSubmit={handleSubmit} className="space-y-6">
                                 <div>
-                                    <label htmlFor="name" className="block font-fastLines text-sm mb-2 text-gray-300">
+                                    <label htmlFor="name" className="block font-montserrat text-sm mb-2 text-gray-300">
                                         Name
                                     </label>
                                     <input
@@ -136,7 +136,7 @@ function Contact() {
                                 </div>
 
                                 <div>
-                                    <label htmlFor="email" className="block font-fastLines text-sm mb-2 text-gray-300">
+                                    <label htmlFor="email" className="block font-montserrat text-sm mb-2 text-gray-300">
                                         Email
                                     </label>
                                     <input
@@ -152,7 +152,7 @@ function Contact() {
                                 </div>
 
                                 <div>
-                                    <label htmlFor="subject" className="block font-fastLines text-sm mb-2 text-gray-300">
+                                    <label htmlFor="subject" className="block font-montserrat text-sm mb-2 text-gray-300">
                                         Subject
                                     </label>
                                     <input
@@ -168,7 +168,7 @@ function Contact() {
                                 </div>
 
                                 <div>
-                                    <label htmlFor="message" className="block font-fastLines text-sm mb-2 text-gray-300">
+                                    <label htmlFor="message" className="block font-montserrat text-sm mb-2 text-gray-300">
                                         Message
                                     </label>
                                     <textarea
@@ -185,7 +185,7 @@ function Contact() {
 
                                 <button
                                     type="submit"
-                                    className="w-full border-2 px-8 py-4 text-lg italic border-[#8CCCFF] text-white font-crossFly rounded-tl-3xl rounded-br-3xl hover:bg-[#8CCCFF] hover:text-black hover:rounded-lg hover:scale-[.97] transition-all backdrop-blur-lg cosmic-glow"
+                                    className="w-full border-2 px-8 py-4 text-lg italic border-[#8CCCFF] text-white font-audiowide rounded-tl-3xl rounded-br-3xl hover:bg-[#8CCCFF] hover:text-black hover:rounded-lg hover:scale-[.97] transition-all backdrop-blur-lg cosmic-glow"
                                 >
                                     SEND MESSAGE
                                 </button>
