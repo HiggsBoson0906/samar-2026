@@ -1,18 +1,18 @@
-import { useState, useRef } from 'react';
+import { useState, useRef,useEffect } from 'react';
 import { RazorpayButton, RazorpayButton3, RazorpayButton4 } from './payment.jsx';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRulerCombined } from '@fortawesome/free-solid-svg-icons';
 
 // import HoverAudio from '../../assets/audio/buttonHoverGTA.mp3';
 import MerchStage from './MerchStage';
-
+import Spaceship from '../../components/spaceship.jsx';
 // Images
 import ocImage from '../../assets/merchandise/oc_remove.png';
 import hcImage from '../../assets/merchandise/hc_remove.png';
 import ccImage from '../../assets/merchandise/cc_remove.png';
 import exeImage from '../../assets/merchandise/exe_remove.png';
 import SizeChart from '../../assets/sizeChart.jpg';
-import CricketBackground from '../../assets/customIllustration/cricketBackground.png';
+import CricketBackground from '../../assets/customIllustration/merchbackground.png';
 
 import '../../../globalStyles.css';
 
@@ -53,7 +53,8 @@ function Merchandise() {
     };
 
     const toggleModal = () => setIsModalOpen(!isModalOpen);
-
+    
+    
     return (
         <>
             {/* BACKGROUND LAYERS */}
@@ -124,8 +125,11 @@ function Merchandise() {
 
                 {/* MODAL */}
                 {isModalOpen && (
-                    <div className="fixed inset-0 bg-black/90 backdrop-blur-lg flex justify-center items-center z-[9999] p-4">
-                        <div className="relative flex flex-col items-center animate-fadeIn" style={{ pointerEvents: 'auto' }}>
+                    <>
+                    
+                        <div className="fixed inset-0 bg-black/90 backdrop-blur-lg flex justify-center items-center z-[9999] p-4">
+                           < Spaceship />
+                        <div className="relative flex flex-col items-center animate-fadeIn" style={{ pointerEvents: 'auto', cursor: 'auto' }}>
                             <span 
                                 className="absolute top-[-40px] right-0 w-10 h-10 bg-red-600 rounded-full flex items-center justify-center text-white cursor-pointer border-2 border-white hover:bg-red-700 transition-colors" 
                                 onClick={toggleModal}
@@ -138,7 +142,8 @@ function Merchandise() {
                                 className="max-w-full max-h-[80vh] border-2 border-[#D3EE98] rounded-xl shadow-[0_0_40px_rgba(211,238,152,0.3)]" 
                             />
                         </div>
-                    </div>
+                        </div>
+                    </>
                 )}
             </div>
         </>

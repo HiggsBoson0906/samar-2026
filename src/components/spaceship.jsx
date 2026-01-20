@@ -2,16 +2,30 @@ import { useEffect, useRef, useState } from "react";
 import staticShip from "../assets/cursor/static.png";
 import thrusterShip from "../assets/cursor/moving.gif";
 
-const STATIC_SIZE = 110;
-const MOVING_SIZE = 80;
+const STATIC_SIZE = 65;
+const MOVING_SIZE = 47;
 
-export default function Spaceship() {
+export default function Spaceship({ enabled = true }) {
     const cursorRef = useRef(null);
 
     const [moving, setMoving] = useState(false);
     const [hovering, setHovering] = useState(false);
 
     const stopTimeout = useRef(null);
+    useEffect(() => {
+        if (enabled) {
+            document.body.classList.add("cursor-hidden");
+        } else {
+            document.body.classList.remove("cursor-hidden");
+        }
+
+        return () => {
+            document.body.classList.add("cursor-hidden");
+        };
+    }, [enabled]);
+    if (!enabled) {
+        return null;
+    }
 
     useEffect(() => {
         const handleMove = (e) => {
